@@ -9,4 +9,6 @@ app.get ('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'));
 })
 
-app.listen(PORT, () => console.log('Servidor Activado', + PORT));
+app.listen(PORT, () => console.log(`Servidor Activado en el puerto ${PORT}
+http://localhost:${PORT}
+`))
